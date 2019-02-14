@@ -1,5 +1,16 @@
 # Predicting Tennis Court Surface (Clay or Not Clay)
 
+##### Table of Contents
+
+1. [Background](#background)
+2. [Data](#data)
+3. [Project Goal](#project-goal)
+4. [EDA](#eda)
+5. [Model Used](#model-used)
+6. [Testing the Model](#testing-the-model-on-unseen-data)
+7. [Conclusion](#conclusion)
+8. [Areas for Improvement](#areas-for-improvement)
+
 # Background
 
 Professional tennis is generally played on three surfaces: hard court, clay, and grass.
