@@ -71,11 +71,11 @@ Additionally, I looked through the features for collinearity issues.
 
 The only obvious issues of collinearity are among features that, intuitively, should stick together. For example, % of points that begin with first serves and % of points that begin with second serves should be strongly negatively correlated. Similarly, it makes sense that a positive linear correlation exists between the number of break points played and the number of break points saved.
 
-I chose to include first serve percentage and number of break points played as features in the model because of their potential to account for the importance of the serve in a match. On faster surfaces, an aggressive serve is important as it puts the server on the offensive immediately. On slower surfaces, the bounce of is slowed so the reward for a "big" serve is mitigated. Theoretically, a more consistent, conservative serve is rewarded on the slower, clay surface.
+I chose to include first serve percentage and number of break points played as features in the model because of their potential to account for the importance of the serve in a match. On faster surfaces, an aggressive serve is important as it puts the server on the offensive immediately. On clay, the bounce is slowed so the reward for a "big" serve is mitigated. Theoretically, a more consistent, conservative serve is rewarded on the slower, clay surface.
 
 # Model Used
 
-The initial goal of the project was to be able to predict whether a match was played on hard or clay or grass courts using a multinomial logistic regression. After seeing the balance of the three classes, I narrowed the classes down to clay and not clay. I would use the features selected to predict the log odds that a match was played on a clay court.
+The initial goal of the project was to be able to predict whether a match was played on hard or clay or grass courts using a multinomial logistic regression. After seeing the balance of the three classes, I narrowed the classes down to clay and not clay. I used the selected features to predict the log odds that a match was played on a clay court.
 
 ![3 Class Balance](images/unbalanced_3.jpg)
 
@@ -99,16 +99,16 @@ OR
 
 The model performance on the training data is as follows:
 
-accuracy: 0.69
-precision: 0.55
+accuracy: 0.69 |
+precision: 0.55 |
 recall: 0.77
 
 # Testing the Model on Unseen Data
 
 When the model was tested on unseen data, it performed as follows:
 
-test accuracy: 0.68
-test precision: 0.53
+test accuracy: 0.68 |
+test precision: 0.53 |
 test recall:0.69
 
 ![](images/con_mat.jpg)
