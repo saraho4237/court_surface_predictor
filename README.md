@@ -93,10 +93,6 @@ The features and coefficients are as follows:
 
 ### Odds <sub>clay</sub> = e<sup>-0.72(aces_p_set)</sup> e<sup>-0.36(dfs_p_set)</sup>   e<sup> 0.15(winner_p_set)</sup>   e<sup> 0.78(fs_pct)</sup>   e<sup> 0.32(rpw_pct)</sup>
 
-OR
-
-### Odds <sub>clay</sub> = 0.49(aces_p_set)  0.69(dfs_p_set)  1.16(winner_p_set)  2.18(fs_pct)  1.38 (rpw_pct)
-
 The model performance on the training data is as follows:
 
 accuracy: 0.69 |
